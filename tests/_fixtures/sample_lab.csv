@@ -1,0 +1,7 @@
+date,group,value,score,label
+2026-01-01,A,10,0.20,baseline
+2026-01-02,A,12,0.30,baseline
+2026-01-03,B,19,0.55,treatment
+2026-01-04,B,21,0.60,treatment
+2026-01-05,B,20,0.65,treatment
+
