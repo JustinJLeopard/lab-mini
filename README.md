@@ -5,6 +5,17 @@
 
 Minimal reference for repeatable data-science labbing: load, profile, analyze, claim, report.
 
+`lab-mini` is the small research loop behind the bigger agent-infrastructure
+work: make the dataset shape explicit, make claims reproducible, and render the
+result as a report that another session can inspect.
+
+## What It Proves
+
+- A lab run should produce a claim artifact, not just notebook state.
+- Profiling comes before analysis so downstream claims know their data shape.
+- Deterministic seeds and fixture-backed tests keep the loop repeatable.
+- The same pattern works as a lightweight evaluation harness for agent behavior.
+
 ## Install
 
 ```bash
@@ -32,3 +43,8 @@ print(render_markdown([claim]))
 
 See [docs/USAGE.md](docs/USAGE.md) for the full loop.
 
+## Related
+
+- [JustAi](https://github.com/JustinJLeopard/JustAi) — orchestration control plane.
+- [safe-mini](https://github.com/JustinJLeopard/safe-mini) — safe local execution substrate.
+- [memory-mini](https://github.com/JustinJLeopard/memory-mini) — durable agent memory reference.
